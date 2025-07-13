@@ -16,8 +16,11 @@ RUN npm install -g pm2
 
 COPY . /app
 
+# Build the Angular application
+RUN pnpm run build
+
 EXPOSE 3000
 
 # Inicia la aplicación usando pm2
-CMD ["pm2-runtime", "main.ts"]
+CMD ["pm2-runtime", "dist/main.js"]
 
