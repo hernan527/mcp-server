@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --exec node --no-warnings=ExperimentalWarning --loader ts-node/esm ./app/main.ts", 
+    "dev": "nodemon --exec node --no-warnings=ExperimentalWarning --loader ts-node/esm ./app/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node ./dist/main.js"
@@ -16,8 +16,12 @@
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.15.1",
-    "zod": "^3.22.2",
-    "nodemon": "^3.0.1"
+    "@types/express": "^5.0.3",
+    "axios": "^1.10.0",
+    "expess": "0.0.1-security",
+    "express": "^5.1.0",
+    "nodemon": "^3.0.1",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@types/node": "^24.0.13",
