@@ -16,8 +16,8 @@
             "node"
           ]
     },
+    "include": ["app/*"],
     "ts-node": {
         "esm": true
-      },
-    "include": ["app/*"]
+      }
 }
