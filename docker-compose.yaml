@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  mcpserver:
+    build: .
+    container_name: mcpserver
+    ports:
+      - "3000:3000"
+
+    depends_on:
+      - mcpserver
