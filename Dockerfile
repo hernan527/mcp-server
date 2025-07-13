@@ -1,6 +1,6 @@
 FROM node:20.9.0-alpine
 
-WORKDIR /app
+WORKDIR /
 
 # Install pnpm globally
 RUN corepack enable && corepack prepare pnpm@latest --activate
@@ -14,7 +14,7 @@ RUN pnpm install
 # Instala pm2 globalmente
 RUN npm install -g pm2
 
-COPY . /app
+COPY . /
 
 # Build the Angular application
 RUN pnpm run build
