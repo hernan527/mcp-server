@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   mcpserver:
-    build: .
+    build: ./app
     container_name: mcpserver
     ports:
       - "3000:3000"
