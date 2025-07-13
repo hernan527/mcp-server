@@ -13,9 +13,8 @@
             "*": ["node_modules/*"]
         },
         "types": [
-            "node",
-            "express",
+            "node"
           ]
     },
-    "include": ["src/**/*"]
+    "include": ["app/*"]
 }
