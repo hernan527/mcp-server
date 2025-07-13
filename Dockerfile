@@ -9,7 +9,7 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 COPY package.json pnpm-lock.yaml ./
 
 # Install project dependencies
-RUN pnpm install @modelcontextprotocol/sdk zod tsc
+RUN pnpm install
 
 # Instala pm2 globalmente
 RUN npm install -g pm2
