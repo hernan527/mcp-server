@@ -15,7 +15,7 @@
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.15.1",
-    "zod": "^4.0.5"
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
